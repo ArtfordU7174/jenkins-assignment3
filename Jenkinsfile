@@ -1,6 +1,9 @@
 pipeline {
-    slave2
-
+    
+    agent {
+	lebel 'slave2'
+	} 
+	
     stages {
         stage('Hello') {
             steps {
@@ -14,4 +17,5 @@ pipeline {
         }
         
     }
+}
 }
